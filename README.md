@@ -15,7 +15,7 @@ A Mini Project that aims to filter various types of noises present in a sine sig
 1. The signal is loaded using the python file **channel.py** from the environment file **environment.py**. 
 2. An action is chosen from the set of pre-defined action space based on a Boltzmann policy.
 3. Once the specific operation is taken, the reward for the action is calculated in the python file **transform.py**.
-4. The DQN defined in the file **rlmodels.py** caucaltes and output the corresponding action and Q-value for that state.
+4. The DQN defined in the file **rlmodels.py** calculates and outputs the corresponding action and Q-value for that state.
 
 ## The Environment:
 Two approches have been tried out in defining the environment. One method was defining all quantiites using only numpy arrays without any use gym library and the other environment file has all its variables defined with the help of gym library.
