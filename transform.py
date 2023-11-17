@@ -1,8 +1,10 @@
+# Python file that performs the bandpass filtering on the signal.
+
 from scipy.signal import hilbert, butter, lfilter,sosfilt
 from scipy.stats import gmean
 from scipy import mean
 import numpy as np
-# from statistics import mean
+
 constant =  1.73699
 
 def butter_bandpass(lowcut, highcut, fs, order=8):
