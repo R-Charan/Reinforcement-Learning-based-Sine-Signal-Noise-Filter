@@ -1,7 +1,8 @@
+# The python file that defines the environment, the step, the reset for the model.
+
 import transform
 import channel
 import numpy as np
-
 
 class environment:
   def __init__(self):
@@ -34,11 +35,6 @@ class environment:
 
     return self.state, reward, done, info
 
-  def render(self):
-    # plt.plot(filter)
-    # plt.xlim([self.state[0] - 50, self.state[1]+50])
-    # plt.show()
-    pass
   def reset(self):
     self.filter_time_step = 30
     self.state = np.array([100,300])
