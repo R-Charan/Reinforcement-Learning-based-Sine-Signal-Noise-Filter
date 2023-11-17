@@ -1,5 +1,5 @@
+# Python file that loads the signal from the .mat file
 
-from gym.spaces import Box
 import numpy as np
 from math import pi
 from scipy.io import loadmat
