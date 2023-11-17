@@ -1,4 +1,5 @@
 # Gym Implementation
+
 from gym import Env
 from gym.spaces import Box, Discrete
 import channel
@@ -46,9 +47,6 @@ class environment(Env):
         info = {}  # Placeholder - to store all collected info
 
         return self.state, reward, done, info
-
-    def render(self, mode='human'):
-        pass
 
     def reset(self):
         self.filter_time_step = 30
