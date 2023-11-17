@@ -1,3 +1,5 @@
+# The python file that build the RL models using keras RL and tensorflow Keras.
+
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Conv2D, Flatten
 
@@ -20,3 +22,4 @@ def build_agent(model,actions):
                     nb_steps_warmup = 1, target_model_update = 1e-2, gamma = 0.95)
 
     return dqn
+    
